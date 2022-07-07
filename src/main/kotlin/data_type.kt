@@ -21,7 +21,7 @@ fun main(args: Array<String>){
     /**
      * 자료형
      *
-     * Int : 정수 자료형 example 1,2,3,4,5..
+     * Int , Byte , Short , Long : 정수 자료형 example 1,2,3,4,5..
      * Double , Float : 실수 자료형 example 3.14 , 3.14f..
      * String : 문자열 자료형 "Hello"
      * Char : 문자 자료형 'c'
