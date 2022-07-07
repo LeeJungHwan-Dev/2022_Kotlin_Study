@@ -15,6 +15,11 @@ Kotlin을 활용한 안드로이드 프로젝트를 진행해 보는 것을 목�
 * 1번의 과정이 끝나면 프로그래머스 또는 백준을 활용한 심화 학습을 진행한다.</br>
 * 1번과 2번의 과정이 끝나면 안드로이드 프로젝트를 기획 및 진행한다.</br>
 
+
+## 학습 효과
+* 변해가는 안드로이드 앱 개발 언어 Java -> Kotlin 시장에 맞춰 개발 능력 향상
+* Java -> Kotlin으로 변해가는 Example docs 코드 적응력 향상
+
 ## 진행 환경
 * OS : macOS Monterey 12.4 </br>
 * IDE : Intellij IDEA CE 2022.1.3 (Community Edition)</br>
