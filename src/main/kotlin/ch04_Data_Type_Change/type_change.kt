@@ -89,4 +89,22 @@ fun main(args:Array<String>) {
 
     //출력 Yes date is Integer!
 
+    /**
+     * 모든 자료형의 부모 Any
+     * Any? 는 모든 자료형의 시작으로 Int , String과 같이 모든 자료형의 시작이다.
+     *
+     * 예를 살펴보자.
+     *
+     * */
+
+    var a : Any = "test" // String형식으로 스마트 캐스팅
+    println(a)
+    // test 출력
+
+
+    a = 1
+    println(a)
+    // 1 출력
+
+    //위와 같이 any를 활용하면 함수에 if문을 활용하여 다양한 값들을 처리 받을수 있다.
 }
