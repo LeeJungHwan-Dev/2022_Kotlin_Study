@@ -136,7 +136,7 @@ fun doSayAge(age : Int , year : Int = 1999 , next_age : Int) : Unit{
 
 // year는 디폴트 값으로 1999가 지정되어 있다.
 
-fun doSayNumber(vararg number : Int) : Unit{
+fun doSayNumber(vararg number : Int) : Unit{ // vararg는 가변 인자를 나타내는 것으로 (1,2,3,4,5) (1,2,3)과 같이 매개변수의 값의 갯수가 변할때 사용된다.
     for (i in number){
         print("$i ")
     }
