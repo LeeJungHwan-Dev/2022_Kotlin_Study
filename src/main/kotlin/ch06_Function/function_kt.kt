@@ -26,6 +26,18 @@ fun main(args:Array<String>){
     // Lee 출력
     doChangeName()
     // 아무것도 출력 안함
+    doSayName("Lee")
+    // My Name is Lee JungHwan...! 출력
+    doSayAge(23, next_age = 24)
+    // 위와 같이 원래는 24 자리는 default로 1999를 선언한 year에 전달되어야 하지만 next_age 매개변수 이름을 직접 지정해줌으로써
+    // year는 넘어가고 next_age = 24를 전달하게 된다.
+    // 즉 , My age is 23 and Year 1999 and Next_age is 24가 출력 된다.
+
+    doSayNumber(1,2,3,4,5)
+    // 1 , 2, 3, 4, 5 출력
+    doSayNumber(1,2,3)
+    // 1 , 2, 3 출력
+
 }
 
 
@@ -95,4 +107,38 @@ fun doChangeName() : Unit{
     //println(name)
     // 위 2개의 코드는 오류가 난다. 이유는 name은 localTest에만 존재하는 지역 변수이기 때문이다.
 
+}
+
+/**
+ *
+ * 1. 매개변수를 기본값으로 설정할 순 없을까??
+ * 2. 매개변수를 특정 값만 지정해줄순 없을까??
+ * 3. 매개변수의 값이 계속 변하면 어떤식으로 처리할까??
+ *
+ * 1 : 매개변수 선언과 동시에 값을 지정해주면 된다.
+ * 2 : 함수에 매개변수를 전달할 때 이름을 지정하고 값을 넘겨주면된다.
+ * 3 : vararg를 사용하여 매개변수가 가변 인자라는것을 표현하면된다.
+ *
+ * 아래 예제를 보자.
+ *
+ * */
+
+
+fun doSayName(name : String , name2 : String = " JungHwan") : Unit{
+    println("My Name is ${name + name2}...!")
+}
+
+// name2는 디폴드 값으로 JungHwan이 지정되어 있다.
+
+fun doSayAge(age : Int , year : Int = 1999 , next_age : Int) : Unit{
+    println("My age is $age and Year $year and Next_age is $next_age")
+}
+
+// year는 디폴트 값으로 1999가 지정되어 있다.
+
+fun doSayNumber(vararg number : Int) : Unit{
+    for (i in number){
+        print("$i ")
+    }
+    println()
 }
