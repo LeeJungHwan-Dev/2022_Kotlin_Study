@@ -72,4 +72,21 @@ fun main(args:Array<String>) {
     // 이로인해 참조 주소가 달라 false가 나온다.
     // 단 -128 ~ 127은 이미 캐시영역에 존재하기 때문에 true가 나온다.
 
+
+    /**
+     *
+     * is 키워드를 사용하면 자료형을 검사할 수 있다.
+     * 아래 예제를 참고해보자.
+     *
+     * */
+
+
+    if(date is Int){
+        println("Yes date is Integer!")
+    }else if(date !is Int){
+        println("No date is Not Integer!")
+    }
+
+    //출력 Yes date is Integer!
+
 }
