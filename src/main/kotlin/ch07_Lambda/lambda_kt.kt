@@ -27,7 +27,9 @@ fun main(args:Array<String>) {
      * */
 
 
-    val lambda1 : (Int , Int) -> Int = {x,y -> x+y} // 람다식 매개변수 자료형을 생략한 람다식
+    val lambda1 : (Int, Int) -> Int = { x, y ->
+        x+y
+    } // 람다식 매개변수 자료형을 생략한 람다식
     val lambda2 : (Int , Int) -> Int = {x:Int,y:Int -> x+y} // 매개변수의 자료형을 전부 표기한 람다식
     val lambda3 = {x:Int, y:Int -> x+y} // 선언 자료형 생략
 
