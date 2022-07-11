@@ -16,6 +16,31 @@ fun main(args:Array<String>) {
     // 지금은 x 와 y의 인자로 1과 2를 넘겨줘 x + y를 실행했지만
     // x - y를 넘기면 어떤식으로 출력 될까?
     // -1이 출력된다.
+
+
+    /**
+     *
+     * 람다식은 변수안에다가 선언하여 사용할수도 있다.
+     *
+     * 아래 예를 보자
+     *
+     * */
+
+
+    val lambda1 : (Int , Int) -> Int = {x,y -> x+y} // 람다식 매개변수 자료형을 생략한 람다식
+    val lambda2 : (Int , Int) -> Int = {x:Int,y:Int -> x+y} // 매개변수의 자료형을 전부 표기한 람다식
+    val lambda3 = {x:Int, y:Int -> x+y} // 선언 자료형 생략
+
+    // 각 람다식을 사용하여 값을 출력해보자.
+
+    println(lambda1(1,2))
+    println(lambda2(1,2))
+    println(lambda3(1,2))
+    //위 모든 람다식1,2,3에서 똑같이 3을 출력한다.
+
+
+
+
 }
 
 
