@@ -12,6 +12,7 @@ fun main(args:Array<String>) {
      *
      * */
     add({x,y ->x-y},1,2)
+    // 함수 호출 부분에서는 왼쪽에는 이용될 매개변수를 지정하고 오른쪽에 해당 리턴에 사용될 식을 입력한다.
     // 지금은 x 와 y의 인자로 1과 2를 넘겨줘 x + y를 실행했지만
     // x - y를 넘기면 어떤식으로 출력 될까?
     // -1이 출력된다.
@@ -21,6 +22,7 @@ fun main(args:Array<String>) {
 
 
 fun add(sum: (Int ,Int) ->Int , x: Int, y: Int ) : Unit{
+    // 함수쪽에서는 받을 매개변수의 타입을 괄호안에 정의하고 리턴 타입의 형식을 -> 오른쪽에 정의한다.
     println(sum(x,y))
 }
 
