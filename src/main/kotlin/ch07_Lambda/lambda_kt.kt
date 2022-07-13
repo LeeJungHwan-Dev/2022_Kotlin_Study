@@ -40,7 +40,20 @@ fun main(args:Array<String>) {
     println(lambda3(1,2))
     //위 모든 람다식1,2,3에서 똑같이 3을 출력한다.
 
-
+    println(twolambda({a,b -> "Hello $a $b"},{c -> "$c lee" }))
+    /**
+     * 두개의 람다식을 가진 함수를 이용해보자.
+     *
+     * 이번 람다식 함수는 기존에 {x,y -> x+ y} x:Int , y:Int 와 같은 형식으로 값을 함께 넘겨줘서 출력하는 방법이 아닌
+     * 함수를 콜하고 리턴 값이 String이고 함수의 지정된 값을 이용한다 생각하면 편하다. 함수 -> 출력 값
+     *
+     * 두개의 람다식을 사용할땐 기존 람다식 선언과 똑같다.
+     *
+     * 단지 , ','를 사용하여 name1 : (String,String) -> String , name2: (String) -> String과 같이 서로 구별하여 작성해주면된다.
+     *
+     * 또한, 람다식 함수 안에 각 함수를 사용하여 지정해주면 된다. 위 예제를 참고해보자.
+     *
+     * */
 
 
 }
@@ -55,3 +68,9 @@ fun add(sum: (Int ,Int) ->Int , x: Int, y: Int ) : Unit{
 
 // 또한 위와 같은 식을 가진 함수를 고차함수라고 할 수 있다.
 // 람다식을 사용한 여러 이용 예제를 차후 학습해보는것도 좋을것 같다.
+
+
+fun twolambda(name : (String , String ) -> String , name2 : (String) -> String){
+    println(name("lee","jung"))
+    println(name2("hi"))
+}
