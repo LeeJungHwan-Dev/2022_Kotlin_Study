@@ -120,6 +120,21 @@ fun main() {
      *
      * */
 
+
+
+    /**
+     *
+     * class 안에 class??
+     *
+     * 코틀린은 재밌는 지원 사항이 하나 있다 바로 inner class이다.
+     * inner클래스는 class파일안에 또 다른 class를 지정하는 것으로 아래 예제를 보면 쉽게 이해할 수 있다.
+     *
+     * */
+
+
+    var test = Child()
+    test.Inside().test()
+
 }
 
 
@@ -173,4 +188,26 @@ class Apple{
     }
 
 
+}
+
+
+
+class Child : Bird("coco",2,"Short","blue"){
+    fun x () :Unit{
+        println("Hello I'm child...!")
+    }
+
+    inner class Inside{
+        fun test(){
+            Child().x() // child안의 x 호출
+            x() // inside의 x 호출
+            super@Child.do_PrintInfo() // child의 상위 클래스 Bird의 메서드 호출
+
+        }
+
+
+        fun x () :Unit{
+            println("Hello I'm Inside...!")
+        }
+    }
 }
