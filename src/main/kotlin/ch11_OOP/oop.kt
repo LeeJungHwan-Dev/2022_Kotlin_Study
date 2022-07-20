@@ -112,8 +112,11 @@ fun main() {
 
     /**
      *
+     * super ? this ?
+     * super을 사용하면 상위 클래스의 프로퍼티나 메서드 , 생성자를 사용할 수 있습니다.
      *
-     *
+     * 예를 들어 Bird를 상속받은 클래스에서 super.do_PrintInfo()를 사용하면 Bird의 do_printInfo가 실행됩니다.
+     * this는 현재 객체를 참조한다.
      *
      * */
 
