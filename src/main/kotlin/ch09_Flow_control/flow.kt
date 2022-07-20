@@ -138,4 +138,11 @@ fun main() {
 
     //while문에 false값을 넣었지만 한번의 hello가 출력된다.
 
+
+
+    /**
+     *
+     * 이 외에도 break , continue와 같은 흐름제어 문도 Java와 똑같다.
+     *
+     * */
 }
