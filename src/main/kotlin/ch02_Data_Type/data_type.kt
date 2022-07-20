@@ -14,6 +14,8 @@ fun main(args: Array<String>){
      * var number : Int = 1 차후에 변경 가능
      * val number : Int = 1 차후에 변경 불가능
      *
+     * 이 부분에서 주의할점은 데이터 타입은 대문자로 입력해야한다.
+     *
      *
      * */
 
