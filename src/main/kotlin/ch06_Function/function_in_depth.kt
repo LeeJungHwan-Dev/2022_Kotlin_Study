@@ -122,7 +122,7 @@ val lambda: () -> Boolean = {
 fun callByName (b: () -> Boolean) : Boolean {
     println("CallByName function")
     return b()
-    // 왜 b가 아니라 b() 인가요? 지금 함수에서는 b가 람다식 함수 이기떄문에 b() 입니다.
+    // 왜 b가 아니라 b() 인가요? 지금 함수에서는 b가 람다식 함수 이기때문에 b() 입니다.
 }
 
 val otherLambda: () -> Boolean = {
